@@ -8,14 +8,19 @@ Rails.application.config.generators do |g|
 end
 EOD
 
-# add our favourite gems
+inject_into_file 'Gemfile', <<-EOD, :after => "# gem 'rails',     :git => 'git://github.com/rails/rails.git'\n"
 gem 'inherited_resources'
 gem 'haml-rails'
+EOD
 
-gem 'rspec-rails', '>= 2.0.1', :group => [:development, :test]
-gem 'fabrication', :group => [:development, :test]
-gem 'ffaker', :group => [:development, :test]
-gem 'shoulda-matchers', :group => [:development, :test]
+append_file 'Gemfile', <<-EOD
+group :development, :test do
+  gem 'rspec-rails', '>= 2.0.1'
+  gem 'fabrication'
+  gem 'ffaker'
+  gem 'shoulda-matchers'
+end
+EOD
 
 run 'bundle install'
 generate 'rspec:install'
