@@ -11,6 +11,7 @@ EOD
 inject_into_file 'Gemfile', <<-EOD, :after => "# gem 'rails',     :git => 'git://github.com/rails/rails.git'\n"
 gem 'inherited_resources'
 gem 'haml-rails'
+gem 'simple_form'
 EOD
 
 append_file 'Gemfile', <<-EOD
@@ -24,6 +25,7 @@ EOD
 
 run_bundle ; instance_eval("def run_bundle ; end")  # I'm going to hell.
 generate 'rspec:install'
+generate 'simple_form:install'
 
 # Replace application layout with a HAML version
 remove_file 'app/views/layouts/application.html.erb'
