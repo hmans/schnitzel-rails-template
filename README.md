@@ -16,7 +16,13 @@ When it comes to testing, this template adds:
 * [ffaker](https://github.com/EmmanuelOga/ffaker). It's like [faker](http://faker.rubyforge.org/), but with more _f_.
 * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers), because we're going to hell, anyway.
 
-Please note that this template is meant to be _schnitzel opinionated_. It integrates our current set of favorite gems, and if you disagree with our selection, then frankly, that's pretty much your thing, tiger. There are no plans to make this thing all-encompassing or even, gasp, interactive. It's minimal, it's what we like, it's what we use, and we're happy if you like it, too. \o/
+In addition to these gems, this template
+
+* deletes the default `public/index.html` file. _GO AWAY, `INDEX.HTML`, NOBODY LIKES YOU._
+* replaces the out-of-the-box `application.html.erb` with, well, a `application.html.haml`. Of course.
+* creates a new git repository, adds pretty much all files and creates a solid first commit. Sorry if you don't like git but _who are you?_
+
+**Please note that this template is meant to be _schnitzel opinionated_.** It integrates our current set of favorite gems, and if you disagree with our selection, then frankly, that's pretty much your thing, tiger. There are no plans to make this thing all-encompassing or even, gasp, interactive. It's minimal, it's what we like, it's what we use, and we're happy if you like it, too. \o/
 
 ### Usage
 
@@ -26,3 +32,5 @@ This will generate a new Rails app and use our little template
 to add, well, the things mentioned above. We live in exciting times.
 
 Enjoy.
+
+_- Team Schnitzel_
