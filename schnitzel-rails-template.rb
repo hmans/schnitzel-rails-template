@@ -19,3 +19,10 @@ gem 'shoulda-matchers', :group => [:development, :test]
 
 run 'bundle install'
 generate 'rspec:install'
+
+# Create a git repository and add everything so far.
+#
+git :init
+git :add => '.'
+git :commit => "-m 'Initial import. Schnitzel is GO!'"
+
