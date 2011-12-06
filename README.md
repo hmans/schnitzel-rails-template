@@ -7,6 +7,7 @@ of gems and stuff:
 * [HAML](https://github.com/nex3/haml). Need we say more? It should be default for Rails, just like SASS.
 * [inherited_resources](https://github.com/josevalim/inherited_resources), like a beautiful, but slightly evil mistress that makes sure you stay on the path of RESTfulnessness.
 * [simple_form](https://github.com/plataformatec/simple_form). We couldn't work without it. (Yes, we do think it's superior even to the excellent formtastic. Sue us.)
+* [cancan](https://github.com/ryanb/cancan), sweet, code-level permission management.
 
 When it comes to testing, this template adds:
 
