@@ -22,7 +22,7 @@ group :development, :test do
 end
 EOD
 
-run 'bundle install'
+run_bundle ; instance_eval("def run_bundle ; end")  # I'm going to hell.
 generate 'rspec:install'
 
 # Replace application layout with a HAML version
