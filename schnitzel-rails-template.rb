@@ -20,10 +20,25 @@ gem 'shoulda-matchers', :group => [:development, :test]
 run 'bundle install'
 generate 'rspec:install'
 
+# Replace application layout with a HAML version
+remove_file 'app/views/layouts/application.html.erb'
+create_file 'app/views/layouts/application.html.haml', <<-EOD
+!!!
+%html
+  %head
+    %title #{app_name}
+    = stylesheet_link_tag :application
+    = javascript_include_tag :application
+    = csrf_meta_tags
+  %body
+    = yield
+EOD
+
+remove_file 'public/index.html'
+
 # Create a git repository and add everything so far.
 #
 git :init
 git :add => '.'
-git :rm => '-f public/index.html'
 git :commit => "-m 'Initial import. Schnitzel is GO!'"
 
