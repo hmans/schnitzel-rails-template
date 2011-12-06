@@ -24,5 +24,6 @@ generate 'rspec:install'
 #
 git :init
 git :add => '.'
+git :rm => '-f public/index.html'
 git :commit => "-m 'Initial import. Schnitzel is GO!'"
 
