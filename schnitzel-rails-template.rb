@@ -16,3 +16,6 @@ gem 'rspec-rails', '>= 2.0.1', :group => [:development, :test]
 gem 'fabrication', :group => [:development, :test]
 gem 'ffaker', :group => [:development, :test]
 gem 'shoulda-matchers', :group => [:development, :test]
+
+run 'bundle install'
+generate 'rspec:install'
