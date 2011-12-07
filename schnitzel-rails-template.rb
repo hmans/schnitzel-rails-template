@@ -1,3 +1,16 @@
+# SCHNITZEL-RAILS-TEMPLATE
+#
+# Usage:
+#
+#     rails new facebook2 -m http://git.io/schnitzel-rails-template -T
+#
+# Generate your app with MysQL:
+#
+#     rails new facebook2 -d mysql -m http://git.io/schnitzel-rails-template -T
+#
+# And so on and so forth. Happy times.
+#
+
 initializer 'generators.rb', <<-EOD
 Rails.application.config.generators do |g|
   g.orm             :active_record
