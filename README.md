@@ -14,7 +14,6 @@ When it comes to testing, this template adds:
 * [rspec](https://github.com/rspec/rspec-rails), our currently preferred test framework.
 * [fabrication](http://fabricationgem.org/). Yeah.
 * [ffaker](https://github.com/EmmanuelOga/ffaker). It's like [faker](http://faker.rubyforge.org/), but with more _f_.
-* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers), because we're going to hell, anyway.
 
 In addition to these gems, this template
 

@@ -33,7 +33,9 @@ group :development, :test do
   gem 'rspec-rails', '>= 2.0.1'
   gem 'fabrication'
   gem 'ffaker'
-  gem 'shoulda-matchers'
+  
+  # Some more optional gems.
+  # gem 'shoulda-matchers'
 end
 EOD
 
