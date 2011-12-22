@@ -2,11 +2,11 @@
 #
 # Usage:
 #
-#     rails new facebook2 -m http://git.io/schnitzel-rails-template -T
+#     rails new facebook2 -m https://raw.github.com/hmans/schnitzel-rails-template/master/schnitzel-rails-template.rb -T
 #
 # Generate your app with MysQL:
 #
-#     rails new facebook2 -d mysql -m http://git.io/schnitzel-rails-template -T
+#     rails new facebook2 -d mysql -m https://raw.github.com/hmans/schnitzel-rails-template/master/schnitzel-rails-template.rb -T
 #
 # And so on and so forth. Happy times.
 #

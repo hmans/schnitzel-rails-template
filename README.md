@@ -25,7 +25,7 @@ In addition to these gems, this template
 
 ### Usage
 
-    rails new facebook2 -m http://git.io/schnitzel-rails-template -T
+    rails new facebook2 -m https://raw.github.com/hmans/schnitzel-rails-template/master/schnitzel-rails-template.rb -T
 
 This will generate a new Rails app and use our little template
 to add, well, the things mentioned above. We live in exciting times.
@@ -33,7 +33,7 @@ to add, well, the things mentioned above. We live in exciting times.
 Feel free to pass in all the options that you're used to. For example, you can
 still create a new application using MySQL (instead of the default SQLite3) like this:
 
-    rails new facebook2 -d mysql -m http://git.io/schnitzel-rails-template -T
+    rails new facebook2 -d mysql -m https://raw.github.com/hmans/schnitzel-rails-template/master/schnitzel-rails-template.rb -T
 
 Enjoy.
 
