@@ -21,7 +21,7 @@ Rails.application.config.generators do |g|
 end
 EOD
 
-inject_into_file 'Gemfile', <<-EOD, :after => "# gem 'rails',     :git => 'git://github.com/rails/rails.git'\n"
+inject_into_file 'Gemfile', <<-EOD, :after => "# gem 'rails', :git => 'git://github.com/rails/rails.git'\n"
 gem 'inherited_resources'
 gem 'cancan'
 gem 'haml-rails'
