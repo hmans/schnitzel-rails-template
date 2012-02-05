@@ -12,7 +12,7 @@ of gems and stuff:
 When it comes to testing, this template adds:
 
 * [rspec](https://github.com/rspec/rspec-rails), our currently preferred test framework.
-* [fabrication](http://fabricationgem.org/). Yeah.
+* [factory_girl](https://github.com/thoughtbot/factory_girl_rails/). Yeah.
 * [ffaker](https://github.com/EmmanuelOga/ffaker). It's like [faker](http://faker.rubyforge.org/), but with more _f_.
 
 In addition to these gems, this template

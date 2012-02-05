@@ -17,7 +17,7 @@ Rails.application.config.generators do |g|
   g.template_engine :haml
   g.test_framework  :rspec, :fixture => false
   g.stylesheets     false
-  g.fixture_replacement :fabrication
+  g.fixture_replacement :factory_girl
 end
 EOD
 
@@ -31,9 +31,9 @@ EOD
 append_file 'Gemfile', <<-EOD
 group :development, :test do
   gem 'rspec-rails', '>= 2.0.1'
-  gem 'fabrication'
+  gem 'factory_girl_rails'
   gem 'ffaker'
-  
+
   # Some more optional gems.
   # gem 'shoulda-matchers'
 end
